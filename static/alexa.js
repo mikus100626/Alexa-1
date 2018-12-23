@@ -13,9 +13,10 @@ ALEXA.addEventListener('start', function() {
 })
 
 ALEXA.addEventListener('result', function(event) {
-    const text = event.results[0][0].transcript;
+    const text = '"' + event.results[0][0].transcript + '"';
     RESULT.innerHTML= text;
-    CONFIDENCE.innerHTML=event.results[0][0].confidence * 100 + '%';
+    CONFIDENCE.innerHTML=Math.round(event.results[0][0].confidence * 100 )+ '%';
+    console.log(event.results[0][0].confidence * 100)
     execute(text.toLowerCase())
 })
 

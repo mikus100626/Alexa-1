@@ -3,15 +3,76 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(128, 128, 128)
+   
 }
 main {
     width: 60vw;
-    height: 60vh;
-    border: 2px solid black;
+    height: 40vh;
+    border-right: 10px #4CAF50 solid;
+    border-left: 10px #4CAF50 solid;
+    
 }
-#stan, #confidence, #result {
-    margin: 2px;
+#stan, #confidence, #result  {
+    margin: 0;
     height: 10vh;
-    border: 1px solid black;
-    font-size: 2rem;
+
+    font-size: 5rem;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+
+    
 }
+#stan {
+    background-color: rgb(123, 255, 127);
+}
+
+#result {
+    
+    background-color: rgb(111, 230, 115);
+}
+#confidence {
+    
+    background-color: rgb(101, 212, 105);
+}
+#button1 {
+    font-family: 'Righteous', cursive;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    width:100%;
+    height: 10vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4em;
+}
+#button1:hover {
+    font-family: 'Righteous', cursive;
+    background-color: rgb(184, 184, 184); 
+    color: rgb(255, 255, 255);
+    border: none;
+    width:100%;
+    height: 10vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4em;
+};
+#button1:active {
+    font-family: 'Righteous', cursive;
+    background-color: rgb(88, 88, 88); 
+    color: rgb(255, 255, 255);
+    border: none;
+    width:100%;
+    height: 10vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4em;
+};
+#button1:visited {
+
+    outline:none;
+ 
+};
